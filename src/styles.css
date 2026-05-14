@@ -1,0 +1,194 @@
+/* ============================================================
+   GLOBAL STYLES — Nayeem Kazi Portfolio
+   Microsoft Fluent / Glassmorphism Design System
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
+
+/* ---- CSS Custom Properties ---- */
+:root {
+  /* Light Theme */
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --surface-elevated: #f0f2f5;
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 120, 212, 0.35);
+  --border-highlight: rgba(255, 255, 255, 0.9);
+  --text-primary: #0f1923;
+  --text-secondary: #3d4f5c;
+  --text-muted: #7a8c99;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --shadow-strong: rgba(0, 0, 0, 0.15);
+  --grid-line: rgba(0, 0, 0, 0.04);
+  --hover-bg: rgba(0, 0, 0, 0.04);
+  --accent-blue: #0078d4;
+  --accent-green: #107c10;
+  --gradient-primary: linear-gradient(135deg, #0078d4 0%, #1a5fb4 50%, #0d3b8a 100%);
+  --gradient-text: linear-gradient(135deg, #0078d4, #107c10);
+}
+
+[data-theme="dark"] {
+  --bg: #0c0e12;
+  --surface: #131720;
+  --surface-elevated: #1a1f2e;
+  --glass-bg: rgba(19, 23, 32, 0.75);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(0, 120, 212, 0.5);
+  --border-highlight: rgba(255, 255, 255, 0.06);
+  --text-primary: #e8ecf0;
+  --text-secondary: #9aabb8;
+  --text-muted: #5a6b78;
+  --shadow: rgba(0, 0, 0, 0.4);
+  --shadow-strong: rgba(0, 0, 0, 0.6);
+  --grid-line: rgba(255, 255, 255, 0.025);
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --accent-blue: #4da6ff;
+  --accent-green: #3dba3d;
+  --gradient-primary: linear-gradient(135deg, #0078d4 0%, #4da6ff 100%);
+  --gradient-text: linear-gradient(135deg, #4da6ff, #3dba3d);
+}
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-blue); }
+
+/* ---- Selection ---- */
+::selection { background: rgba(0, 120, 212, 0.2); color: var(--text-primary); }
+
+/* ---- Layout Containers ---- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 6rem 0;
+  background: var(--bg);
+}
+
+.alt-section {
+  background: var(--surface);
+  position: relative;
+}
+
+.alt-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--bg) 0%, transparent 5%, transparent 95%, var(--bg) 100%);
+  pointer-events: none;
+}
+
+/* ---- Section Headers ---- */
+.section-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-label {
+  display: inline-block;
+  background: rgba(0,120,212,0.1);
+  border: 1px solid rgba(0,120,212,0.25);
+  color: var(--accent-blue);
+  border-radius: 100px;
+  padding: 0.3rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 0.85rem;
+}
+
+.section-title {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0.5rem auto 0;
+  line-height: 1.7;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ---- Gradient Text ---- */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Scrollbar for code blocks ---- */
+pre, code { font-family: 'DM Mono', monospace; }
+
+/* ---- Focus Visible ---- */
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---- Utility ---- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border-width: 0;
+}
+
+/* ---- Main padding-top for fixed navbar ---- */
+main { padding-top: 0; }
+
+/* ---- Animations ---- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ---- Responsive base ---- */
+@media (max-width: 768px) {
+  .section { padding: 4.5rem 0; }
+  .container { padding: 0 1.25rem; }
+  .section-title { font-size: 1.6rem; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 3.5rem 0; }
+  .container { padding: 0 1rem; }
+}

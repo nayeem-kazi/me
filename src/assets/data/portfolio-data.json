@@ -1,0 +1,251 @@
+{
+  "personal": {
+    "name": "Md. Nayeem Kazi",
+    "firstName": "Nayeem",
+    "title": "Full Stack Developer",
+    "subtitle": "Java · Spring Boot · Angular",
+    "tagline": "Crafting robust, scalable enterprise applications with clean architecture",
+    "location": "Dhaka, Bangladesh",
+    "email": "nayeemkazi@email.com",
+    "phone": "+880 1XXX-XXXXXX",
+    "linkedin": "https://www.linkedin.com/in/nayeem-kazi/",
+    "github": "https://github.com/nayeem-kazi",
+    "resumeUrl": "/assets/resume/nayeem-kazi-resume.pdf",
+    "availability": "Open to opportunities",
+    "badges": ["Java Developer", "Spring Boot", "Angular", "Full Stack"]
+  },
+  "about": {
+    "bio": "I'm a passionate Full Stack Developer specializing in Java, Spring Boot, and Angular. I build scalable, maintainable enterprise-grade web applications with a strong focus on clean architecture, RESTful API design, and modern frontend development.",
+    "bio2": "I enjoy turning complex business requirements into elegant, efficient solutions. With experience across the full development lifecycle — from system design to deployment — I take pride in writing clean, testable code that stands the test of time.",
+    "highlights": [
+      { "icon": "☕", "label": "Java Expert", "description": "Deep expertise in Core Java, OOP principles, and enterprise-level Java development" },
+      { "icon": "🚀", "label": "Spring Boot", "description": "Building RESTful APIs, microservices, and secure backend systems with Spring ecosystem" },
+      { "icon": "🅰️", "label": "Angular", "description": "Crafting modern, reactive, and responsive single-page applications with Angular" },
+      { "icon": "🏗️", "label": "Clean Architecture", "description": "Committed to SOLID principles, design patterns, and maintainable code structure" }
+    ]
+  },
+  "skills": [
+    {
+      "category": "Backend",
+      "icon": "dns",
+      "color": "#0078d4",
+      "items": [
+        { "name": "Java", "level": 92 },
+        { "name": "Spring Boot", "level": 90 },
+        { "name": "Spring Security", "level": 85 },
+        { "name": "Spring Data JPA", "level": 87 },
+        { "name": "Hibernate", "level": 83 },
+        { "name": "REST API Design", "level": 90 }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "icon": "web",
+      "color": "#dd1b16",
+      "items": [
+        { "name": "Angular", "level": 88 },
+        { "name": "TypeScript", "level": 85 },
+        { "name": "HTML5 / CSS3", "level": 90 },
+        { "name": "RxJS", "level": 80 },
+        { "name": "Angular Material", "level": 82 },
+        { "name": "JavaScript (ES6+)", "level": 85 }
+      ]
+    },
+    {
+      "category": "Database",
+      "icon": "storage",
+      "color": "#107c10",
+      "items": [
+        { "name": "MySQL", "level": 88 },
+        { "name": "PostgreSQL", "level": 83 },
+        { "name": "Oracle DB", "level": 78 },
+        { "name": "MongoDB", "level": 72 },
+        { "name": "Redis", "level": 70 }
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "icon": "build",
+      "color": "#722ed1",
+      "items": [
+        { "name": "Git / GitHub", "level": 90 },
+        { "name": "Docker", "level": 78 },
+        { "name": "Maven / Gradle", "level": 85 },
+        { "name": "Postman", "level": 88 },
+        { "name": "JIRA", "level": 80 },
+        { "name": "IntelliJ IDEA", "level": 92 }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Current Company",
+      "role": "Software Developer",
+      "location": "Dhaka, Bangladesh",
+      "period": "2023 – Present",
+      "color": "#0078d4",
+      "type": "Full-time",
+      "current": true,
+      "description": "Working as a Full Stack Developer building enterprise web applications using Java Spring Boot and Angular.",
+      "achievements": [
+        "Designed and developed RESTful APIs using Spring Boot, improving system performance and scalability",
+        "Built responsive, dynamic frontend interfaces with Angular and Angular Material",
+        "Integrated Spring Security for JWT-based authentication and role-based authorization",
+        "Collaborated with cross-functional teams to deliver features across the full development lifecycle",
+        "Wrote unit and integration tests to ensure code quality and reliability"
+      ],
+      "tech": ["Java", "Spring Boot", "Angular", "MySQL", "Spring Security", "REST API", "Git"]
+    },
+    {
+      "id": 2,
+      "company": "Previous Company",
+      "role": "Junior Software Developer",
+      "location": "Dhaka, Bangladesh",
+      "period": "2021 – 2023",
+      "color": "#107c10",
+      "type": "Full-time",
+      "current": false,
+      "description": "Contributed to enterprise web application development focusing on backend API and frontend components.",
+      "achievements": [
+        "Developed and maintained Spring Boot services for business-critical applications",
+        "Built Angular components and services following best practices and clean architecture",
+        "Worked on database design and optimization using MySQL and PostgreSQL",
+        "Participated in Agile/Scrum ceremonies and sprint planning"
+      ],
+      "tech": ["Java", "Spring Boot", "Angular", "PostgreSQL", "Hibernate", "Maven"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Enterprise Resource Management System",
+      "description": "A full-featured ERP system built with Spring Boot microservices backend and Angular frontend. Features include inventory management, HR module, reporting dashboards, and role-based access control.",
+      "tech": ["Java", "Spring Boot", "Angular", "MySQL", "Spring Security", "JWT", "Docker"],
+      "github": "https://github.com/nayeem-kazi",
+      "live": null,
+      "color": "#0078d4",
+      "featured": true,
+      "category": "Enterprise",
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "title": "RESTful E-Commerce API",
+      "description": "A robust e-commerce backend API built with Spring Boot. Includes product catalog, user authentication, cart management, order processing, and payment integration.",
+      "tech": ["Java", "Spring Boot", "Spring Security", "Spring Data JPA", "MySQL"],
+      "github": "https://github.com/nayeem-kazi",
+      "live": null,
+      "color": "#107c10",
+      "featured": true,
+      "category": "Backend",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "title": "Task Management Angular App",
+      "description": "A responsive SPA for team task management with Kanban board, real-time updates, user assignment, and progress tracking built with Angular.",
+      "tech": ["Angular", "TypeScript", "RxJS", "Angular Material", "Spring Boot", "REST API"],
+      "github": "https://github.com/nayeem-kazi",
+      "live": null,
+      "color": "#dd1b16",
+      "featured": true,
+      "category": "Frontend",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "title": "JWT Authentication System",
+      "description": "A complete JWT-based auth system with refresh token rotation, RBAC, email verification, and audit logging using Spring Security.",
+      "tech": ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL", "Redis"],
+      "github": "https://github.com/nayeem-kazi",
+      "live": null,
+      "color": "#722ed1",
+      "featured": false,
+      "category": "Backend",
+      "status": "Completed"
+    },
+    {
+      "id": 5,
+      "title": "Real-time Chat Application",
+      "description": "WebSocket-powered chat app with Angular frontend and Spring Boot backend supporting private messaging, group channels, and message history.",
+      "tech": ["Angular", "Spring Boot", "WebSocket", "STOMP", "MySQL"],
+      "github": "https://github.com/nayeem-kazi",
+      "live": null,
+      "color": "#d4380d",
+      "featured": false,
+      "category": "Full Stack",
+      "status": "Completed"
+    },
+    {
+      "id": 6,
+      "title": "Spring Boot Microservices Template",
+      "description": "A production-ready microservices boilerplate with service discovery, API gateway, centralized config, and Docker Compose.",
+      "tech": ["Java", "Spring Boot", "Spring Cloud", "Docker", "Eureka", "API Gateway"],
+      "github": "https://github.com/nayeem-kazi",
+      "live": null,
+      "color": "#00b4d8",
+      "featured": false,
+      "category": "Backend",
+      "status": "Open Source"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "Your University Name",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science & Engineering",
+      "location": "Bangladesh",
+      "period": "2017 – 2021",
+      "grade": "CGPA: X.XX",
+      "color": "#0078d4",
+      "description": "Studied core CS fundamentals including algorithms, data structures, operating systems, database management, and software engineering principles.",
+      "activities": ["Programming Club", "Competitive Programming", "Final Year Project Lead"]
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "Spring Boot & Microservices",
+      "issuer": "Udemy",
+      "date": "2023",
+      "color": "#0078d4",
+      "badge": "☕",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "name": "Angular — The Complete Guide",
+      "issuer": "Udemy",
+      "date": "2022",
+      "color": "#dd1b16",
+      "badge": "🅰️",
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "name": "Java Programming Masterclass",
+      "issuer": "Udemy",
+      "date": "2021",
+      "color": "#107c10",
+      "badge": "🏆",
+      "url": "#"
+    },
+    {
+      "id": 4,
+      "name": "REST API Design Best Practices",
+      "issuer": "LinkedIn Learning",
+      "date": "2022",
+      "color": "#0a66c2",
+      "badge": "🔗",
+      "url": "#"
+    }
+  ],
+  "contact": {
+    "heading": "Let's Work Together",
+    "subheading": "Have a project in mind or want to discuss an opportunity? I'd love to hear from you.",
+    "availability": "Available for freelance & full-time roles",
+    "responseTime": "Usually replies within 24 hours"
+  }
+}

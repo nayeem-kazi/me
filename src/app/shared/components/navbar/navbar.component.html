@@ -1,0 +1,30 @@
+<nav class="navbar" [class.scrolled]="scrolled()">
+  <div class="nav-container">
+    <a class="nav-brand" (click)="scrollTo('#hero')">
+      <span class="brand-icon">NK</span>
+      <span class="brand-name">Nayeem<span class="accent">.</span></span>
+    </a>
+
+    <ul class="nav-links" [class.open]="menuOpen()">
+      @for (link of navLinks; track link.label) {
+        <li>
+          <a class="nav-link" (click)="scrollTo(link.href)">{{ link.label }}</a>
+        </li>
+      }
+      <li>
+        <button class="theme-btn" (click)="themeService.toggle()" [attr.aria-label]="themeService.isDark() ? 'Light mode' : 'Dark mode'">
+          {{ themeService.isDark() ? '☀️' : '🌙' }}
+        </button>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-btn desktop-only" (click)="themeService.toggle()">
+        {{ themeService.isDark() ? '☀️' : '🌙' }}
+      </button>
+      <button class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>

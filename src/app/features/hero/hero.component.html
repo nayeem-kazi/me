@@ -1,0 +1,107 @@
+<section id="hero" class="hero">
+  <!-- Ambient background blobs -->
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-content">
+
+      <!-- Status pill -->
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>{{ personal.availability }}</span>
+      </div>
+
+      <!-- Name & Title -->
+      <h1 class="hero-name">
+        Hi, I'm <span class="name-highlight">{{ personal.firstName }}</span> 👋
+      </h1>
+
+      <div class="hero-typed">
+        <span class="typed-prefix">I'm a </span>
+        <span class="typed-text">{{ typedText }}</span>
+        <span class="cursor">|</span>
+      </div>
+
+      <p class="hero-tagline">{{ personal.tagline }}</p>
+
+      <!-- Badges -->
+      <div class="hero-badges">
+        @for (badge of personal.badges; track badge) {
+          <span class="badge">{{ badge }}</span>
+        }
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="hero-actions">
+        <button class="btn-primary" (click)="scrollToContact()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get In Touch
+        </button>
+        <a [href]="personal.resumeUrl" download class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+        <a [href]="personal.linkedin" target="_blank" rel="noopener" class="btn-icon" title="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a [href]="personal.github" target="_blank" rel="noopener" class="btn-icon" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </div>
+
+      <!-- Location -->
+      <p class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        {{ personal.location }}
+      </p>
+    </div>
+
+    <!-- Hero visual card -->
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="card-header">
+          <div class="card-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="card-title-bar">NayeemDev.java</span>
+        </div>
+        <div class="code-block">
+          <div class="code-line"><span class="kw">public class</span> <span class="cls">Developer</span> &#123;</div>
+          <div class="code-line indent"><span class="kw">private</span> String name = <span class="str">"Md. Nayeem Kazi"</span>;</div>
+          <div class="code-line indent"><span class="kw">private</span> String role = <span class="str">"Full Stack Developer"</span>;</div>
+          <div class="code-line indent"><span class="kw">private</span> String[] stack = &#123;</div>
+          <div class="code-line indent2"><span class="str">"Java"</span>, <span class="str">"Spring Boot"</span>, <span class="str">"Angular"</span></div>
+          <div class="code-line indent">&#125;;</div>
+          <div class="code-line">&nbsp;</div>
+          <div class="code-line indent"><span class="kw">public</span> String getTagline() &#123;</div>
+          <div class="code-line indent2"><span class="kw">return</span> <span class="str">"Clean code. Scalable systems."</span>;</div>
+          <div class="code-line indent">&#125;</div>
+          <div class="code-line">&#125;</div>
+        </div>
+        <div class="card-stats">
+          <div class="stat"><span class="stat-val">Java</span><span class="stat-label">Backend</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-val">Spring</span><span class="stat-label">Boot</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-val">Angular</span><span class="stat-label">Frontend</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator" (click)="scrollToAbout()">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+    <span>Scroll</span>
+  </div>
+</section>
