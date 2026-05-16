@@ -114,6 +114,20 @@
         "Worked with Java, Spring Boot, Angular, JSF, Oracle, and Agile (Scrum) methodologies."
       ],
       "tech": ["Java", "Spring Boot", "Angular", "PostgreSQL", "Hibernate", "Maven"]
+    },
+    {
+      "id": 23
+      "company": "IsDB BISEW",
+      "role": "Trainee",
+      "location": "Dhaka, Bangladesh",
+      "period": "October 2021 – January 2023",
+      "color": "#107c10",
+      "type": "Full-time",
+      "current": false,
+      "description": "Enterprise Systems Analysis & Design with JEE.",
+      "achievements": [
+      ],
+      "tech": ["HTML", "CSS", "BootStrap", "JavaScript", "SQL", "MySQL", "JAVA", "SWING", "Spring", "Spring Boot", "Angular", "JSP", "JSF", "Dart", "Android", "Flutter"]
     }
   ],
   "projects": [
