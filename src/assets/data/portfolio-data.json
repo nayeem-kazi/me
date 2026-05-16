@@ -12,7 +12,7 @@
     "github": "https://github.com/nayeem-kazi",
     "resumeUrl": "/assets/resume/nayeem-kazi-resume.pdf",
     "availability": "Open to opportunities",
-    "badges": ["Java Developer", "Spring Boot", "Angular", "Full Stack"]
+    "badges": ["Java Developer", "Spring Boot", "Angular", "Full Stack", "Fintech"]
   },
   "about": {
     "bio": "I'm a passionate Full Stack Developer specializing in Java, Spring Boot, and Angular. I build scalable, maintainable enterprise-grade web applications with a strong focus on clean architecture, RESTful API design, and modern frontend development.",
@@ -81,7 +81,7 @@
     {
       "id": 1,
       "company": "Millennium Information Solution LTD",
-      "role": "Software Developer",
+      "role": "Software Engineer",
       "location": "Dhaka, Bangladesh",
       "period": "September 2025 – Present",
       "color": "#0078d4",
@@ -89,18 +89,18 @@
       "current": true,
       "description": "Working as a Full Stack Developer building enterprise web applications using Java Spring Boot and Angular.",
       "achievements": [
-        "Designed and developed RESTful APIs using Spring Boot, improving system performance and scalability",
-        "Built responsive, dynamic frontend interfaces with Angular and Angular Material",
-        "Integrated Spring Security for JWT-based authentication and role-based authorization",
-        "Collaborated with cross-functional teams to deliver features across the full development lifecycle",
-        "Wrote unit and integration tests to ensure code quality and reliability"
+        "Development and enhancement of core banking modules in ABABIL Islamic Core Banking System.",
+        "Implement new feature on Trade Finance, Treasury, Foreign Remittance, Reconciliation and Bank Guarantee Modules.",
+        "Resolving complex issues, improving system performance, and providing production support.",
+        "Code Review of Junior Developers",
+        "Collaborating with teams, mentoring junior developers, and\nparticipating in technical design and code"
       ],
       "tech": ["Java", "Spring Boot", "Angular", "MySQL", "Spring Security", "REST API", "Git"]
     },
     {
       "id": 2,
       "company": "Millennium Information Solution LTD",
-      "role": "Assistant Software Developer",
+      "role": "Assistant Software Engineer",
       "location": "Dhaka, Bangladesh",
       "period": "February 2023 – August 2025",
       "color": "#107c10",
@@ -108,10 +108,10 @@
       "current": false,
       "description": "Contributed to enterprise web application development focusing on backend API and frontend components.",
       "achievements": [
-        "Developed and maintained Spring Boot services for business-critical applications",
-        "Built Angular components and services following best practices and clean architecture",
-        "Worked on database design and optimization using MySQL and PostgreSQL",
-        "Participated in Agile/Scrum ceremonies and sprint planning"
+        "Developed and maintained features for Trade Finance, Treasury, Foreign Remittance, and Bank Guarantee modules in ABABIL.",
+        "Fixed critical bugs and improved system performance and reliability.",
+        "Collaborated with teams and provided client support for smooth banking operations.",
+        "Worked with Java, Spring Boot, Angular, JSF, Oracle, and Agile (Scrum) methodologies."
       ],
       "tech": ["Java", "Spring Boot", "Angular", "PostgreSQL", "Hibernate", "Maven"]
     }
