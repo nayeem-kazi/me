@@ -28,11 +28,9 @@ import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.dir
                   <div class="skill-item">
                     <div class="skill-meta">
                       <span class="skill-name">{{ item.name }}</span>
-                      <span class="skill-pct">{{ item.level }}%</span>
                     </div>
                     <div class="skill-bar-bg">
                       <div class="skill-bar-fill"
-                           [style.width.%]="item.level"
                            [style.background]="cat.color">
                       </div>
                     </div>
